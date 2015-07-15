@@ -1,0 +1,29 @@
+{
+  "name": "dolls",
+  "version": "0.1.0",
+  "description": "experimental programming engineered for exploration and play",
+  "main": "demo.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cushman/dolls.git"
+  },
+  "author": "Adrian Cushman",
+  "license": "All Rights Reserved",
+  "bugs": {
+    "url": "https://github.com/cushman/dolls/issues"
+  },
+  "homepage": "https://github.com/cushman/dolls",
+  "private": true,
+  "dependencies": {
+    "circular-json": "^0.1.6",
+    "coffeeify": "^1.1.0",
+    "dom-delegator": "^13.1.0",
+    "immutable": "^3.7.4",
+    "lodash": "^3.10.0",
+    "vdom-thunk": "^3.0.0",
+    "virtual-dom": "^2.0.1"
+  }
+}
