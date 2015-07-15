@@ -1,0 +1,606 @@
+
+/* latin */
+@font-face {
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Comfortaa'), local('Comfortaa-Regular'), url(http://fonts.gstatic.com/s/comfortaa/v7/qLBu5CQmSMt1H43OiWJ77VtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+/* latin */
+@font-face {
+  font-family: 'Play';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Play'), url(http://fonts.gstatic.com/s/play/v6/ZNo-5SxCwH1CXgZ-n3bt2g.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+/* latin */
+@font-face {
+  font-family: 'Poiret One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Poiret One'), local('PoiretOne-Regular'), url(http://fonts.gstatic.com/s/poiretone/v4/HrI4ZJpJ3Fh0wa5ofYMK8fk_vArhqVIZ0nv9q090hN8.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+/* latin */
+@font-face {
+  font-family: 'Forum';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Forum'), url(http://fonts.gstatic.com/s/forum/v7/eMDvaUkVr_spjjcEeqYI5A.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+/* latin */
+@font-face {
+  font-family: 'Patrick Hand';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Patrick Hand'), local('PatrickHand-Regular'), url(http://fonts.gstatic.com/s/patrickhand/v10/9BG3JJgt_HlF3NpEUehL0Ogdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+body {
+    font-family: 'Forum', sans;
+    background-color: rgb(19, 18, 18);
+    color: white;
+    text-shadow: 0px 0px 0.1em, 0 0 1em;
+}
+input,select,option,button {
+    font-family: 'Forum', sans;
+}
+.ex-forward, .doll-verb {
+    padding: 2;
+    background: rgba(255, 209, 209, 0.9);
+    display: inline-block;
+}
+
+.expression, .doll, .doll-face {
+    position: relative;
+   
+}
+
+.sim-result.sim-value,.doll-state {
+    padding: 2px;
+    background: rgba(40, 221, 40, 0.35);
+    display: inline-block;
+    /* width: 100%; */
+}
+
+.inspector .list {
+    /* background: rgba(219, 219, 255, 0.96); */
+    padding: 2px;
+    border: 2px solid rgba(174, 140, 255, 0.76);
+    display: inline-block;
+    border-radius: 3px;
+}
+
+.inspector .item {
+    background: rgba(215, 234, 255, 0.95);
+    display: inline-block;
+    margin-left: 1px;
+    margin-right: 2px;
+}
+
+.string > div, .number > div {
+    display: inline-block;
+    z-index: 1;
+}
+
+.argument {
+    /* min-width: 100%; */
+    max-width: 10900px;
+    position: relative;
+    left: 10px;
+}
+
+.expression-container {
+    /* width: 100px; */
+}
+
+.prop > div {
+    display: inline-block;
+}
+
+.quoted-expression > list > item {}
+
+.quoted-expression > .list > .item {
+    background: inherit;
+    display: block;
+    margin: 0;
+}
+
+.cell {
+    background-color: rgba(231, 211, 255, 0.9);
+}
+
+.cell > div {
+    display: inline-block;
+}
+
+.cell-label {
+    border: 1px solid black;
+}
+
+.cell-value {
+    border: 1px solid white;
+}
+
+.number-base {
+    font-size: 10px;
+    background: rgb(197, 197, 197);
+    display: inline-block;
+}
+
+.quoted-expression {
+    border: 5px solid rgba(252, 179, 45, 0.6);
+    border-radius: 5px 0 5px 0;
+}
+
+.error {
+    background-color: rgba(242, 93, 93, 0.64);
+}
+
+.sim-prev-value-prefix {
+    display: inline-block;
+}
+
+.function.ex-forward {}
+
+.sim-prev-value {
+    background: gray;
+}
+
+.doll-eye-inner {
+    width: 12px;
+    height: 12px;
+    border-radius: 6px;
+    display: inline-block;
+    transition: width 0.3s, height 0.3s, border-width 0.3s;
+    position: absolute;
+    /* margin-right: 5px; */
+    top: 2px;
+    left: 2px;
+    box-shadow: inset 0px -2px 3px -8px rgb(74, 74, 74),inset 0px 4px 12px -5px rgba(255, 255, 255, 1);
+}
+
+.doll-controls {
+    display: inline-block;
+    width: 400px;
+    height: 400px;
+    border-radius: 200px;
+    position: absolute;
+    transition: border-radius 0.25s, width 0.25s, height 0.25s, margin-left 0.25s, margin-top 0.25s, left 0.2s, top 0.2s;
+    z-index: 10;
+    -webkit-user-select: none;
+    overflow: hidden;
+    cursor: default;
+    margin-left: -193px;
+    margin-top: -191px;
+    pointer-events: auto;
+    transition-timing-function: cubic-bezier(0.76, 0.07, 0.32, 1.13);
+}
+
+.verb-dom > div {
+    display: flex;
+}
+
+.doll-care {
+    display: inline-block;
+}
+
+.care-key {
+    font-size: 12px;
+    color: gray;
+}
+
+select.select-forward-function {
+    background: none;
+    border: none;
+}
+
+.doll-eye-inner.highlight {
+    border-width: 0px;
+    width: 16px;
+    height: 16px;
+    border-radius: 8px;
+}
+
+
+.control-buttons {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: gray;
+    /* left: -50px; */
+    /* top: -50px; */
+    z-index: 10;
+    opacity: 0.8;
+}
+
+.control-buttons > button {
+    -webkit-user-select: none;
+}
+
+.doll-link {
+    display: inline-block;
+}
+
+.link-symbol {
+    display: inline-block;
+}
+
+.verb-dom {
+    display: inline-block;
+}
+
+.face-cycle {
+    display: inline-block;
+}
+
+.cycle-label {
+    display: inline-block;
+    width: 11px;
+    height: 10px;
+    border-radius: 7px;
+    border: none;
+    line-height: 11px;
+    color: white;
+    font-weight: bold;
+}
+
+.cycle-state {
+    display: inline-block;
+}
+
+.cycle-label.highlight {
+    width: 14px;
+    height: 14px;
+    line-height: 15px;
+}
+
+.doll-controls.hide {
+    width: 0px;
+    height: 0px;
+    overflow: hidden;
+    margin-left: 7px;
+    margin-top: 9px;
+    border-radius: 0px;
+    pointer-events: none;
+    /* transition: pointer-events 0s 0.25s; */
+}
+
+.doll-controls button {
+    width: 30px;
+    height: 30px;
+    padding: 0px;
+    /* border: none; */
+    border-radius: 10px;
+    display: block;
+    line-height: 0px;
+}
+
+.doll-controls-inner {
+    display: flex;
+    width: 150px;
+    height: 150px;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transition: top 0.1s, left 0.1s;
+    flex-wrap: wrap;
+    margin-left: -75px;
+    margin-top: -75px;
+    border-radius: 75px;
+    box-shadow: 0px -3px 25px 7px rgba(255, 255, 255, 0.88),0px 0px 114px -13px rgba(228, 242, 242, 1);
+    z-index: 10;
+    flex-direction: column;
+}
+
+.doll-controls.hide > .doll-controls-inner {
+    /* top: -100px; */
+    /* left: -100px; */
+}
+
+.doll-eye {
+    position: relative;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    top: -8px;
+    left: 50%;
+    margin-left: -8px;
+}
+
+.doll-list, .doll-map {
+    display: flex;
+    /* background: rgba(178, 217, 255, 0.55); */
+    /* padding: 10px; */
+    /* border-radius: 10px; */
+    /* box-shadow: 2px 2px rgba(115, 115, 255, 0.6); */
+    /* margin: 5px; */
+    flex-wrap: wrap;
+}
+
+.doll-record .doll-key {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: rgb(0, 0, 0);
+    font-size: 12px;
+}
+
+.doll-record-key {}
+
+.doll-record {
+    background: rgba(255, 243, 159, 0.71);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.doll-key {
+    background-color: rgba(0, 0, 0, 0.58);
+    color: white;
+    font-size: 15px;
+    display: inline-block;
+    padding: 2px 6px;
+    border-radius: 5px 0 5px 0;
+}
+
+.object {
+    white-space: nowrap;
+    max-width: 100px;
+    overflow-x: scroll;
+}
+
+.generic-verb {
+    display: inline-block;
+}
+
+.doll-list-item-count {}
+
+.inspect.inspect-hide.clickable {}
+
+.clickable {
+    cursor: pointer;
+    -webkit-user-select: none;
+}
+
+.inspect-button {
+    display: inline-block;
+    background-color: gray;
+    color: white;
+    font-size: 12px;
+    padding: 0px 4px;
+    border-radius: 2px;
+}
+
+.doll-eye-inner.closed {
+    width: 16px;
+    /* border-width: 1px; */
+    height: 7px;
+    top: 5px;
+    left: -1px;
+}
+
+.function-body {
+    white-space: pre-wrap;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.78);
+    font-family: 'Patrick Hand', cursive;
+    font-size: 22px;
+    color: rgb(238, 255, 241);
+    border: 2px solid rgb(238, 255, 241);
+    border-radius: 20px;
+    box-shadow: inset 0 0 176px -50px rgba(238, 255, 241, 0.71), 0 0 5px 0 rgb(238, 255, 241);
+}
+
+.doll-header {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    border: 1px solid white;
+    height: 11px;
+    margin: 3px;
+    margin-bottom: 0;
+    border-bottom: 0;
+    border-radius: 10px 10px 0 0;
+    /* width: 100%; */
+    box-sizing: border-box;
+    box-shadow: 0 -2px 2px -1px white;
+}
+
+.doll-face > .div {
+    display: inline-block;
+}
+
+.doll-eye-inner.closed.highlight {
+    border-width: 0px;   
+    width: 16px;   
+    height: 16px;
+}
+
+.error {}
+
+.inspector {
+    margin: 25px;
+    background-color: rgba(169, 169, 169, 0.26);
+    padding: 25px;
+    box-shadow: 4px 4px rgba(48, 48, 48, 0.17);
+    border-radius: 4px;
+    border: 1px solid white;
+    box-shadow: 0 0 3px white, inset 0 0 3px white;
+}
+
+.radial-target {
+    display: block;
+    background-color: rgba(108, 108, 108, 0.92);
+    padding: 0px;
+    font-size: 13px;
+    margin: 2px;
+    border-radius: 2px;
+    text-align: center;
+    -webkit-user-select: none;
+    cursor: default;
+    position: absolute;
+    left: 0%;
+    width: 45px;
+    height: 45px;
+    margin-left: -22px;
+    margin-top: -22px;
+    border-radius: 15px;
+    line-height: 45px;
+    box-shadow: inset 0px -7px 52px -19px rgba(0, 0, 0, 0.81),inset 0px 8px 13px -3px rgba(255, 255, 255, 0.69),inset 0px 0px 1px 0px white;
+    color: rgba(255, 255, 255, 0.86);
+    text-shadow: -1.5px -2px 1px rgba(255, 255, 255, 0.68);
+}
+
+.radial-target.target {
+    background-color: rgb(255, 255, 255);
+    color: white;
+    z-index: 10;
+    color: rgba(0, 0, 0, 0.94);
+    box-shadow: 0 0 32px 10px white, inset 0px -2px 16px -6px rgba(0, 0, 0, 0.63),inset 0px 8px 13px -3px rgba(255, 255, 255, 0.69),inset 0px 0px 1px 0px white;
+    text-shadow:  0px 0px 2px white;
+}
+
+.radial-target:active {
+    background-color: rgb(139, 139, 255);
+}
+
+.doll-nouns {
+    display: inline;
+}
+
+.nouns-radius {
+    display: inline;
+}
+
+.radial-spacer {
+    width: 50px;
+    height: 50px;
+}
+
+.doll-controls-backdrop {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    border-radius: 50%;
+    opacity: 0.9;
+    box-shadow: inset 0px -11px 96px -27px rgb(74, 74, 74),inset 0px 15px 100px -6px rgb(255, 255, 255),inset 0px -1px 0px 0px white;
+}
+
+.doll-eye-inner.highlight.halo {
+    box-shadow: 0 0 36px 7px rgba(255, 255, 255, 0.65),0 0 5px 2px rgba(255, 255, 255, 0.65), inset 0px -2px 3px -7px rgb(74, 74, 74),inset 0px 2px 7px -1px rgb(255, 255, 255);
+    box-shadow-color: blue;
+}
+
+.doll-controls {
+    position: absolute;
+}
+
+.doll-eye-inner.small {
+    border-width: 1px;
+    width: 6px;
+    height: 12px;
+}
+
+.doll-body .scalar {
+    display: inline-block;
+}
+
+.radial-center {
+    /* flex: auto; */
+    text-align: center;
+    vertical-align: middle;
+    height: 30px;
+    /* flex: 3 3; */
+    background-color: rgba(18, 18, 18, 0.13);
+    width: 80%;
+    left: 10%;
+    top: 56%;
+    position: absolute;
+    z-index: -1;
+    bottom: 2px;
+    color: rgba(255, 255, 255, 0.58);
+    font-size: 22px;
+    box-shadow: 2px -2px 2px 2px rgba(98, 97, 97, 0.09),inset 2px -2px 2px 2px rgba(98, 97, 97, 0.09);
+    text-shadow: -2px -2px 2px  rgba(255, 255, 255, 0.52);
+    /* border-radius: 157px 290px 0 0; */
+}
+
+.radial-center.up {
+    bottom: 71%;
+    top: 28%;
+}
+
+.doll-eye-inner.highlight.small {
+    border-width: 0px;
+    width: 6px;
+    height: 16px;
+}
+
+.application {
+    display: flex;
+}
+
+.application > div {
+    /* flex: 1; */
+    /* flex-shrink: 1; */
+    /* flex-basis: 20%; */
+}
+
+.application-int > .wired {
+    /* box-shadow: inset 2px 2px rgba(98, 98, 98, 0.69); */
+    /* background-color: gray; */
+    border-radius: 12px 0 12px 0;
+    /* flex-basis: 90%; */
+}
+
+.radial-center.target {
+    background-color: rgba(255, 255, 255, 0.81);
+    color: rgba(0, 0, 0, 0.63);
+    text-shadow: -1px -1px 5px rgba(0, 0, 0, 0.41);
+    box-shadow: 0px -4px 7px 2px rgba(255, 255, 255, 1), inset 0px 22px 2px 5px rgba(255, 255, 255, 0.69);
+}
+
+.application-ext {
+    margin: 2px;
+}
+
+.inspector {}
+
+.wired {
+    border: 1px solid white;   box-shadow: 0 0 3px white, inset 0 0 3px white;
+    border-radius: 2px;
+    background-color: rgba(255, 249, 249, 0);
+    padding: 2px 5px;
+    margin: 3px;
+}
+
+.string {
+    white-space: nowrap;
+}
+
+.string-content {
+    white-space: normal;
+}
+
+.doll-body > .doll-dom.wired {
+    margin-top: 0;
+    border-top: none;
+    box-shadow: 0 2px 8px -3px white, inset 0 -2px 3px -1px white;
+    border-radius: 0 0 2px 2px;
+    border-color: rgb(255, 255, 237);
+}
+
+.doll-body {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.application-ext > .wired {
+    border-radius: 10px 0 0 10px;
+}
